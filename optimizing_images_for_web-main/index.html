@@ -14,13 +14,32 @@
         <!--Her bliver der brugt en eksisterende billedfil (png) under "very-large". Der bliver tilføjet en source tag som specificere en kilde. Dermed bliver der tilføjet en media query for at definere at dette er til store skærme (1921px)-->
       <source type="images/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png" >
 
-      <!--Optimering til skærme på 1281px med webp-->>
+      <!--Optimering til skærme på 1281px med webp-->
       <source type="image/webp" media="(min-width: 1281px) and (max-width: 1920px)" srcset="src/images/regular/bike-regular.webp">
 
-      <!--Optimering til skærme på 1281px med png-->>
+      <!--Optimering til skærme på 1281px med png-->
       <source type="image/png" media="(min-width: 1281px) and (max-width: 1920px)" srcset="src/images/regular/bike-regular.png">
 
-      <img src="src/images/bike-2003909.png" style="width: 100%"/>
+      <!--Optimering til skærme på 1280px med webp-->
+      <source type="image/webp" 
+      media="(min-width: 461px) and (max-width: 1280px) and (orientation: landscape)"
+      srcset="src/images/tablet-landscape/bike-tablet-landscape.webp">
+      
+      <!--Optimering til skærme på 1280px med png-->
+      <source type="image/png" 
+      media="(min-width: 461px) and (max-width: 1280px) and (orientation: landscape)"
+      srcset="src/images/tablet-landscape/bike-tablet-landscape.png">
+
+      <!--Optimering til skærme på 1280px med webp-->
+      <source type="image/webp" 
+      media="(min-width: 461px) and (max-width: 1280px) and (orientation: portrait)"
+      srcset="src/images/tablet-portrait/bike-tablet-portrait.webp">
+
+      <!--Optimering til skærme på 1280px med png-->
+      <source type="image/png" 
+      media="(min-width: 461px) and (max-width: 1280px) and (orientation: portrait)"
+      srcset="src/images/tablet-portrait/bike-tablet-portrait.png">
+
     </picture>
   </body>
 </html>
